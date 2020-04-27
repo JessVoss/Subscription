@@ -1,0 +1,22 @@
+USE subscription;
+CREATE TABLE Participant(
+ID INT NOT NULL primary key auto_increment,
+FirstName varchar(30),
+LastName varchar(30),
+Email varchar(50),
+Phone varchar(10),
+Department varchar(20)
+);
+
+CREATE TABLE ParticipantGroup(
+FitnessGroupID INT,
+ParticipantID INT
+);
+
+CREATE TABLE FitnessGroup(
+ID INT NOT NULL primary key auto_increment,
+Name varchar(30),
+City varchar(50),
+State varchar(25),
+Zipcode INT
+);
